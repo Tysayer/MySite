@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tylers Tee Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>Tyler's Tee Shop</header>
+
+    <div id="content">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shirts.html">Shirts</a></li>
+                <li><a href="shorts.html">Shorts</a></li>
+                <li><a href="boards.html">Skateboards</a></li>
+                <li><a href="acc.html">Accessories</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h2>Welcome To Our Shop</h2>
+            <p>We strive to make the positive difference we want to see in the world. With all of our locally bought fabrics and other tri</p>
+
+            <form id="order_form" name="order_form" action="checkout.html" method="get">
+                <section id="menu">
+                    <h2>Menu</h2>
+                    <p>Click an item to add it to your order.</p>
+                    <ul id="image_list">
+                        <li>
+                            <a href="#"><img id="images/shorts/blueShorts.jpg" src="images/shorts/blueShorts.jpg" alt="images/shorts/blueShortBack.jpg" width="150" height="150">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"><img id="images/shorts/blackShort.jpg" src="images/shorts/blackShort.jpg" alt="images/shorts/blueShortBack.jpg" width="150" height="150"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img id="images/shorts/redShort.jpg" src="images/shorts/redShort.jpg" alt="images/shorts/redShortBack.jpg" width="150" height="150"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img id="images/shorts/gCamoShort.jpg" src="images/shorts/gCamoShort.jpg" alt="images/shorts/gCamoBack.jpg" width="150" height="150"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img id="images/shorts/greenShort.jpg" src="images/shorts/greenShort.jpg" alt="images/shorts/greenShortBack.jpg" width="150" height="150"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img id="images/shorts/greyShort.jpg" src="images/shorts/greyShort.jpg" alt="images/shorts/greyShortBack.jpg" width="150" height="150"></a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Your Order</h2>
+                    <section>
+                        <select class="order" id="list" name="order" size="7">
+                        </select>
+                        <p id="total">&nbsp;</p>
+                    </section>
+                    <section id="buttons">
+                        <input type="button" name="place_order" id="place_order" value="Place Order" onclick="window.location.href='checkout.html'">
+                        <input type="button" name="clear_order" id="clear_order" value="Clear Order">
+                        <input type="button" name="about_us" id="about_us" value="About Us" onclick="window.location.href='about_us.html'">
+                    </section>
+                </section>
+
+
+
+            </form>
+
+
+
+
+
+
+
+
+
+        </main>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js "></script>
+    <script src="tylersTee.js"></script>
+    <footer>Copyright &copy; 2022 Tyler Sayer. </footer>
+</body>
+
+</html>

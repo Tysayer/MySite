@@ -1,0 +1,153 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+    }
+    
+    body {
+        font-family: Verdana, Arial, sans-serif;
+    }
+    
+    header {
+        background-color: rgb(5, 183, 153);
+        font-family: Verdana, Tahoma, sans-serif;
+        font-size: 3em;
+        margin-top: 20px;
+        padding: 1em 0 1em 8em;
+    }
+    
+    nav {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: #db3b0a;
+        background-color: rgb(2, 115, 90);
+        clear: both;
+    }
+    
+    form {
+        background-color: rgb(207, 250, 241);
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        border-bottom: 1px solid #ffffff;
+    }
+    
+    nav a {
+        text-decoration: none;
+        display: block;
+        padding: 1em 2em;
+    }
+    
+    nav a:link {
+        color: #FFFFFF;
+    }
+    
+    nav a.visited {
+        color: #f0f2f6;
+    }
+    
+    h2 {
+        color: #869dc7;
+        font-family: arial, sans-serif;
+    }
+    
+    main {
+        width: 60%;
+        margin-left: 1px;
+        margin-right: 1px;
+        float: right;
+    }
+    
+    aside {
+        background-color: rgb(50, 204, 3);
+        padding: 1em;
+    }
+    
+    ul li {
+        display: inline;
+    }
+    
+    figure {
+        margin: auto;
+        padding: 8px;
+        width: 265px;
+        background-color: #FFF;
+        border: 1px solid #CCC;
+        box-shadow: 5px 5px 5px #828282;
+        transform: rotate(3deg);
+    }
+    
+    figcaption {
+        text-align: center;
+        font-size: .8em;
+        font-style: italic;
+    }
+    
+    footer {
+        background-color: #869DC7;
+        font-size: 70%;
+        text-align: center;
+        padding: 2em;
+        clear: both;
+    }
+    
+    #offer {
+        background-color: #EAEAEA;
+        width: 10em;
+        margin: 2em auto 0 auto;
+        text-align: center;
+        transform: scale(2);
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    #offer a {
+        text-decoration: none;
+        color: #FF0000;
+    }
+    
+    header,
+    main,
+    nav,
+    figure,
+    footer {
+        display: block;
+    }
+    
+    #button {
+        float: inherit;
+        padding: 5px;
+        text-decoration: none;
+        border-radius: 3px;
+        color: rgb(92, 7, 78);
+        border: 2px #828282;
+        background-color: #873f3f;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        #content {
+            display: flex;
+        }
+        nav {
+            flex: none;
+        }
+        main {
+            flex: 6;
+            min-width: 20em;
+            background-color: #FFFFFF;
+        }
+        aside {
+            flex: 4;
+            background-color: rgb(150, 239, 219);
+        }
+        header {
+            padding-left: 10em;
+        }
+    }
